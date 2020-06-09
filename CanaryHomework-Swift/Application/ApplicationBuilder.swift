@@ -6,4 +6,23 @@
 //  Copyright © 2020 Stanle Delacruz. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+/// The builder class, the initial state in the app.
+/// This class main purpose is to extract some functionality from the AppDelegate / SceneDelegate
+final class ApplicationBuilder {
+    
+    // MARK: Public Functions
+    
+    /// Build the application using the app window.
+    /// - Parameter window: The app window.
+    func build(on window: UIWindow?) {
+        let theme = Theme()
+        let client = NetworkClient(urlString: Environment.baseURLString)
+        let viewBuilder = ViewBuilder()
+        let devicesViewController = viewBuilder.buildDevicesViewController(client, theme: theme)
+        theme.setAppearence()
+        window?.rootViewController = devicesViewController
+        window?.makeKeyAndVisible()
+    }
+}

@@ -12,16 +12,19 @@
 /// - trending: A trending request
 /// - search: A Search request using the given term
 enum RequestDataType {
-    case trending
-    case search
+    case devices
+    case devicesById(String)
+    case readings(String)
     
     /// End point used to build URL
     var endPointString: String {
         switch self {
-        case .trending:
-            return "/trending"
-        case .search:
-            return "/search"
+        case .devices:
+            return "/devices"
+        case .readings(let id):
+            return "/devices/\(id)/readings"
+        case .devicesById(let id):
+            return "/devices/\(id)"
         }
     }
 }

@@ -9,6 +9,6 @@
 /// Struct which will be use to define the project Environment urls.
 struct Environment {
     
-    /// The base url for the Giphy API.
-    static var baseURLString = "https://api.giphy.com/v1/gifs"
+    /// The base url for the Device API.
+    static var baseURLString = "https://fullstack-challenge-api.herokuapp.com"
 }

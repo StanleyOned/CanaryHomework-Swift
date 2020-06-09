@@ -48,8 +48,7 @@ final class NetworkClient: NetworkClientProtocol {
             return
         }
 
-        var request = URLRequest(url: url)
-        request.addValue("\(giphyAPIKey)", forHTTPHeaderField: "api_key")
+        let request = URLRequest(url: url)
         send(request: request, completion: completion)
     }
     
