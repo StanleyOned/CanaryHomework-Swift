@@ -28,22 +28,14 @@ struct Device: Decodable {
         case updatedAt
     }
     
-//    func getCreatedAtDateString() -> String {
-//        let formatter = DateFormatter()
-//        formatter.date(from: createdAt)
-//        formatter.dateFormat = "MMM d, h:mm a"
-//        return formatter.string(from: formatter.date(from: createdAt))
-//    }
-//    
-//    func date(from string: String) -> Date? {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-//        return formatter.date(from: string)
-//    }
-//    
-//    func string(from date: Date) -> String {
-//        let formatter = DateFormatter()
-//        formatter.dateFormat = "MMM d, h:mm a"
-//        return formatter.string(from: date)
-//    }
+    func getCreatedAtDateString() -> String? {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        formatter.date(from: createdAt)
+        guard let date = formatter.date(from: createdAt) else {
+            return nil
+        }
+        formatter.dateFormat = "MMM d, h:mm a"
+        return formatter.string(from: date)
+    }
 }

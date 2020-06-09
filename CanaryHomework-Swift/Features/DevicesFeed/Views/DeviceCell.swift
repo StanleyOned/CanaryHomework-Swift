@@ -52,8 +52,8 @@ final class DeviceCell: UITableViewCell {
     
     func configure(with device: Device) {
         titleLabel.text = device.name
-        dateLabel.text = "Hello World"
-        
+        dateLabel.text = device.getCreatedAtDateString()
+
         if let type = device.type,
             let value = device.value,
             let firstLetterUppercased = type.first?.uppercased() {
