@@ -16,7 +16,7 @@ final class DeviceDetailViewController: UIViewController {
     private lazy var airQualityTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = theme.color.brandLabel
-        label.text = "Airquality"
+        label.text = viewModel.airQualityTitle
         return label
     }()
     
@@ -44,7 +44,7 @@ final class DeviceDetailViewController: UIViewController {
     private lazy var humidityTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = theme.color.brandLabel
-        label.text = "Humidity"
+        label.text = viewModel.humidityTitle
         return label
     }()
     
@@ -72,7 +72,7 @@ final class DeviceDetailViewController: UIViewController {
     private lazy var temperatureTitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = theme.color.brandLabel
-        label.text = "Temperature"
+        label.text = viewModel.temperatureTitle
         return label
     }()
     

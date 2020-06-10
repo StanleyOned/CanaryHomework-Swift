@@ -21,6 +21,15 @@ protocol DeviceDetailViewModelProtocol {
     /// Airquality average value.
     var airqualityAverage: Int { get }
     
+    /// Title of Airquality.
+    var airQualityTitle: String { get }
+    
+    /// Title of Humidity.
+    var humidityTitle: String { get }
+
+    /// Title of Temperature.
+    var temperatureTitle: String { get }
+
     /// Humidity max value.
     var humidityMax: Int { get }
     

@@ -14,6 +14,9 @@ final class DeviceDetailViewModel: DeviceDetailViewModelProtocol {
     // MARK: - Properties
     
     var title: String = Strings.deviceDetailTitle
+    var airQualityTitle: String = Strings.airQualityTitleText
+    var humidityTitle: String = Strings.humidityTitleText
+    var temperatureTitle: String = Strings.temperatureTitleText
     
     var airqualityMax = 0
     var airqualityMin = 0
