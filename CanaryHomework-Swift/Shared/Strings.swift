@@ -12,6 +12,15 @@ struct Strings {
     /// Device view controller title.
     static let deviceTitle = "Devices"
     
+    /// Device view controller title.
+    static let deviceDetailTitle = "About Device"
+    
+    static let airQualityText = "Airquality"
+    
+    static let airQualityText = "Airquality"
+    
+    static let airQualityText = "Airquality"
+    
     /// Cancel string.
     static let cancel = "Cancel"
     

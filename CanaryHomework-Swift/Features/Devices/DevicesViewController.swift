@@ -101,6 +101,7 @@ extension DevicesViewController: DevicesView {
 extension DevicesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.didSelectDevice(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }

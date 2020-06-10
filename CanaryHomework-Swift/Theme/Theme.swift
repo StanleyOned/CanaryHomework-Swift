@@ -29,6 +29,6 @@ struct Theme {
         UINavigationBar.appearance().largeTitleTextAttributes = textStyle.attributesLargeArialBoldStyle()
         UINavigationBar.appearance().titleTextAttributes = textStyle.attributesMediumArialBoldStyle()
         UINavigationBar.appearance().backgroundColor = color.brandSystemBackground
-        UINavigationBar.appearance().tintColor = color.brandSystemBackground
+        UINavigationBar.appearance().tintColor = color.brandLabel
     }
 }

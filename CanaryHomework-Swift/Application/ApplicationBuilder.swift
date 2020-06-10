@@ -19,8 +19,8 @@ final class ApplicationBuilder {
     func build(on window: UIWindow?) {
         let theme = Theme()
         let client = NetworkClient(urlString: Environment.baseURLString)
-        let viewBuilder = ViewBuilder()
-        let devicesViewController = viewBuilder.buildDevicesViewController(client, theme: theme)
+        let viewBuilder = ViewBuilder(client, theme: theme)
+        let devicesViewController = viewBuilder.buildDevicesViewController()
         theme.setAppearence()
         window?.rootViewController = devicesViewController
         window?.makeKeyAndVisible()

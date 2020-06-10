@@ -18,11 +18,14 @@ final class DevicesViewModel: DevicesViewModelProtocol {
     weak var view: DevicesView?
     
     private let provider: DevicesProviding
+    private let router: DevicesRouter
     private var devices: [Device]
     
     init(provider: DevicesProviding,
+         router: DevicesRouter,
          devices: [Device] = []) {
         self.provider = provider
+        self.router = router
         self.devices = devices
     }
     
@@ -42,6 +45,11 @@ final class DevicesViewModel: DevicesViewModelProtocol {
     
     func retryFetchingDevices() {
         fetchDevices()
+    }
+    
+    func didSelectDevice(at indexPath: IndexPath) {
+        let selectedDevice = device(at: indexPath)
+        router.routeToDetails(with: selectedDevice.id)
     }
     
     // MARK: - Private Functions

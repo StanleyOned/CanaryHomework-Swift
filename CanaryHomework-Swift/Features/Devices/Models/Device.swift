@@ -16,14 +16,12 @@ struct Device: Decodable {
     let updatedAt: String
     let type: String?
     let value: String?
-    let readings: [Reading]?
     
     enum CodingKeys: String, CodingKey {
         case name
         case id
         case type
         case value
-        case readings
         case createdAt
         case updatedAt
     }

@@ -39,22 +39,4 @@ final class DevicesProvider: DevicesProviding {
             }
         }
     }
-    
-    func getReadings(deviceID: String,
-                    parameters: [String: Any],
-                    completion: @escaping (Result<[Reading], NetworkError>) -> Void) {
-        client.request(parameters: parameters, requestType: .readings(deviceID)) { result in
-            switch result {
-            case .success(let data):
-                do {
-                    let readings = try JSONDecoder().decode([Reading].self, from: data)
-                    completion(.success(readings))
-                } catch {
-                    completion(.failure(NetworkError.unknownError(text: Strings.parseDataErrorMessage)))
-                }
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
 }

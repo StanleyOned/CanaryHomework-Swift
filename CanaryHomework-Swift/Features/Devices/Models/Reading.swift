@@ -19,7 +19,7 @@ struct Reading: Decodable {
     enum CodingKeys: String, CodingKey {
         case type
         case value
-        case id = "deviceId"
+        case id
         case createdAt
         case updatedAt
     }

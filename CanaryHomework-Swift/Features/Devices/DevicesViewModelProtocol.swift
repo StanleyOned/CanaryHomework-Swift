@@ -24,6 +24,10 @@ protocol DevicesViewModelProtocol {
     /// - Parameter indexPath: The index path given.
     func device(at indexPath: IndexPath) -> Device
     
+    /// User seleced a device from the table view screen
+    /// - Parameter indexPath: The indexpath selected
+    func didSelectDevice(at indexPath: IndexPath)
+    
     /// Retry loading devices
     func retryFetchingDevices()
 }

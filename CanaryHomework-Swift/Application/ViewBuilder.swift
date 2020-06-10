@@ -12,20 +12,38 @@ import UIKit
 /// Extracting all the view controller instantiation from other classes.
 final class ViewBuilder {
     
+    // MARK: - Properties
+    
+    private let theme: Theme
+    private let client: NetworkClientProtocol
+    
+    // MARK: - Initializer
+    
+    init(_ client: NetworkClientProtocol, theme: Theme) {
+        self.theme = theme
+        self.client = client
+    }
+    
     // MARK: - Public Functions
 
-    /// Build the devices view controller
-    /// - Parameter client: The network client
-    /// - Returns: Returns the view controller instance
-    func buildDevicesViewController(_ client: NetworkClientProtocol, theme: Theme) -> UIViewController {
+    func buildDevicesViewController() -> UIViewController {
         let view = DevicesViewController(theme: theme)
-        let client = NetworkClient(urlString: Environment.baseURLString)
         let devicesProvider = DevicesProvider(client)
-        let viewModel = DevicesViewModel(provider: devicesProvider)
+        let router = DevicesRouter(viewController: view, viewBuilder: self)
+        let viewModel = DevicesViewModel(provider: devicesProvider, router: router)
         view.viewModel = viewModel
         viewModel.view = view
         let navigationController = UINavigationController(rootViewController: view)
         navigationController.navigationBar.prefersLargeTitles = true
         return navigationController
+    }
+    
+    func buildDevicesDetailViewController(deviceID: String) -> UIViewController {
+        let view = DeviceDetailViewController(theme: theme)
+        let readingsProvider = ReadingsProvider(client)
+        let viewModel = DeviceDetailViewModel(provider: readingsProvider, deviceID: deviceID)
+        view.viewModel = viewModel
+        viewModel.view = view
+        return view
     }
 }
