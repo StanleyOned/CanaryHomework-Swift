@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B1908EC2491954C009089AC /* DeviceDetailViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1908EB2491954C009089AC /* DeviceDetailViewModelMock.swift */; };
+		4B1908EE2491963F009089AC /* DevicesDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1908ED2491963F009089AC /* DevicesDetailViewModelTests.swift */; };
 		4B38E0D9248FD50400057CA2 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38E0D8248FD50400057CA2 /* Device.swift */; };
 		4B38E0DB248FD95100057CA2 /* Reading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38E0DA248FD95100057CA2 /* Reading.swift */; };
 		4B38E0DD248FF02800057CA2 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B38E0DC248FF02800057CA2 /* DevicesView.swift */; };
@@ -16,6 +18,9 @@
 		4B5E39FE2490403800178A85 /* DevicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E39FD2490403800178A85 /* DevicesRouter.swift */; };
 		4B5E3A0124912C5200178A85 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3A0024912C5200178A85 /* ViewBuilder.swift */; };
 		4B5E3A032491361900178A85 /* DeviceDetailViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3A022491361900178A85 /* DeviceDetailViewModelProtocol.swift */; };
+		4B5E3A0624913BA500178A85 /* DevicesViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3A0524913BA500178A85 /* DevicesViewModelMock.swift */; };
+		4B5E3A08249144B900178A85 /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3A07249144B900178A85 /* NetworkClientMock.swift */; };
+		4B5E3A0A249144ED00178A85 /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E3A09249144ED00178A85 /* NetworkClientTests.swift */; };
 		4B7C3729249007C000841D2A /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C3728249007C000841D2A /* DeviceCell.swift */; };
 		4B7C372B24900BF100841D2A /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C372A24900BF100841D2A /* String+Extensions.swift */; };
 		4B7C372F249011AB00841D2A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7C372E249011AB00841D2A /* UIViewController+Extensions.swift */; };
@@ -29,7 +34,7 @@
 		4BB25F8B248FC9540006543D /* DevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25F8A248FC9540006543D /* DevicesViewController.swift */; };
 		4BB25F90248FC95B0006543D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB25F8F248FC95B0006543D /* Assets.xcassets */; };
 		4BB25F93248FC95B0006543D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB25F91248FC95B0006543D /* LaunchScreen.storyboard */; };
-		4BB25F9E248FC95B0006543D /* CanaryHomework_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25F9D248FC95B0006543D /* CanaryHomework_SwiftTests.swift */; };
+		4BB25F9E248FC95B0006543D /* DevicesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25F9D248FC95B0006543D /* DevicesViewModelTests.swift */; };
 		4BB25FAA248FC9E40006543D /* ApplicationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25FA9248FC9E40006543D /* ApplicationBuilder.swift */; };
 		4BB25FAD248FCA2D0006543D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25FAC248FCA2D0006543D /* Theme.swift */; };
 		4BB25FAF248FCA570006543D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB25FAE248FCA570006543D /* Color.swift */; };
@@ -55,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B1908EB2491954C009089AC /* DeviceDetailViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModelMock.swift; sourceTree = "<group>"; };
+		4B1908ED2491963F009089AC /* DevicesDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesDetailViewModelTests.swift; sourceTree = "<group>"; };
 		4B38E0D8248FD50400057CA2 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		4B38E0DA248FD95100057CA2 /* Reading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reading.swift; sourceTree = "<group>"; };
 		4B38E0DC248FF02800057CA2 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
@@ -64,6 +71,9 @@
 		4B5E39FD2490403800178A85 /* DevicesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesRouter.swift; sourceTree = "<group>"; };
 		4B5E3A0024912C5200178A85 /* ViewBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
 		4B5E3A022491361900178A85 /* DeviceDetailViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModelProtocol.swift; sourceTree = "<group>"; };
+		4B5E3A0524913BA500178A85 /* DevicesViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModelMock.swift; sourceTree = "<group>"; };
+		4B5E3A07249144B900178A85 /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
+		4B5E3A09249144ED00178A85 /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
 		4B7C3728249007C000841D2A /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		4B7C372A24900BF100841D2A /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		4B7C372E249011AB00841D2A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
@@ -80,7 +90,7 @@
 		4BB25F92248FC95B0006543D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BB25F94248FC95B0006543D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB25F99248FC95B0006543D /* CanaryHomework-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CanaryHomework-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4BB25F9D248FC95B0006543D /* CanaryHomework_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanaryHomework_SwiftTests.swift; sourceTree = "<group>"; };
+		4BB25F9D248FC95B0006543D /* DevicesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesViewModelTests.swift; sourceTree = "<group>"; };
 		4BB25F9F248FC95B0006543D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB25FA9248FC9E40006543D /* ApplicationBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBuilder.swift; sourceTree = "<group>"; };
 		4BB25FAC248FCA2D0006543D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -131,6 +141,16 @@
 				4B38E0E1248FF25300057CA2 /* DevicesProviding.swift */,
 			);
 			path = DevicesProvider;
+			sourceTree = "<group>";
+		};
+		4B5E3A0424913B6D00178A85 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				4B5E3A0524913BA500178A85 /* DevicesViewModelMock.swift */,
+				4B1908EB2491954C009089AC /* DeviceDetailViewModelMock.swift */,
+				4B5E3A07249144B900178A85 /* NetworkClientMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		4B7C3727249007B000841D2A /* Views */ = {
@@ -196,7 +216,10 @@
 		4BB25F9C248FC95B0006543D /* CanaryHomework-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				4BB25F9D248FC95B0006543D /* CanaryHomework_SwiftTests.swift */,
+				4B5E3A0424913B6D00178A85 /* Mocks */,
+				4BB25F9D248FC95B0006543D /* DevicesViewModelTests.swift */,
+				4B1908ED2491963F009089AC /* DevicesDetailViewModelTests.swift */,
+				4B5E3A09249144ED00178A85 /* NetworkClientTests.swift */,
 				4BB25F9F248FC95B0006543D /* Info.plist */,
 			);
 			path = "CanaryHomework-SwiftTests";
@@ -418,7 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BB25F9E248FC95B0006543D /* CanaryHomework_SwiftTests.swift in Sources */,
+				4B5E3A08249144B900178A85 /* NetworkClientMock.swift in Sources */,
+				4B5E3A0624913BA500178A85 /* DevicesViewModelMock.swift in Sources */,
+				4BB25F9E248FC95B0006543D /* DevicesViewModelTests.swift in Sources */,
+				4B5E3A0A249144ED00178A85 /* NetworkClientTests.swift in Sources */,
+				4B1908EE2491963F009089AC /* DevicesDetailViewModelTests.swift in Sources */,
+				4B1908EC2491954C009089AC /* DeviceDetailViewModelMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

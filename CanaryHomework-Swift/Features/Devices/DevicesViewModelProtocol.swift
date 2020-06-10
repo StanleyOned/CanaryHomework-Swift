@@ -30,4 +30,7 @@ protocol DevicesViewModelProtocol {
     
     /// Retry loading devices
     func retryFetchingDevices()
+    
+    /// Fetch devices from internet.
+    func fetchDevices()
 }

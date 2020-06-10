@@ -51,10 +51,8 @@ final class DevicesViewModel: DevicesViewModelProtocol {
         let selectedDevice = device(at: indexPath)
         router.routeToDetails(with: selectedDevice.id)
     }
-    
-    // MARK: - Private Functions
-    
-    private func fetchDevices() {
+        
+    func fetchDevices() {
         view?.toggleLoadingIndicator(true)
         provider.getDevices { [weak self] result in
             guard let self = self else {

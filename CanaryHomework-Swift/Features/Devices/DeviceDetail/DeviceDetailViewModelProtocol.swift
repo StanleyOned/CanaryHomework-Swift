@@ -53,4 +53,7 @@ protocol DeviceDetailViewModelProtocol {
     
     /// Retry fetching readings from the server.
     func retryFetchingReadings()
+    
+    /// Fetch Readings
+    func fetchReadings()
 }

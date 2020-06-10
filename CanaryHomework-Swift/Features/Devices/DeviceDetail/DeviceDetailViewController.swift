@@ -212,7 +212,7 @@ extension DeviceDetailViewController: DeviceDetailView {
         humidityAverageLabel.text = viewModel.humidityAverage > 0 ? "Average: \(viewModel.humidityAverage)" : "--"
         
         temperatureMaxLabel.text = viewModel.temperatureMax > 0 ? "Max: \(viewModel.temperatureMax)" : "--"
-        temperatureMinLabel.text = viewModel.temperatureMin > 0 ? "Min: \(viewModel.temperatureMin)" : "--"
+        temperatureMinLabel.text = (viewModel.temperatureMin > 0 || viewModel.temperatureMin < 0) ? "Min: \(viewModel.temperatureMin)" : "--"
         temperatureAverageLabel.text = viewModel.temperatureAverage > 0 ? "Average: \(viewModel.temperatureAverage)" : "--"
     }
     

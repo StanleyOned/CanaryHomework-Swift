@@ -30,8 +30,7 @@ final class DevicesProvider: DevicesProviding {
                 do {
                     let devices = try JSONDecoder().decode(Array<Device>.self, from: data)
                     completion(.success(devices))
-                } catch let jsonError {
-                    print(jsonError)
+                } catch {
                     completion(.failure(NetworkError.unknownError(text: Strings.parseDataErrorMessage)))
                 }
             case .failure(let error):

@@ -60,9 +60,7 @@ final class DeviceDetailViewModel: DeviceDetailViewModelProtocol {
         fetchReadings()
     }
     
-    // MARK: - Private Functions
-    
-    private func fetchReadings() {
+    func fetchReadings() {
         provider.getReadings(deviceID: deviceID, parameters: nil) { [weak self] result in
             guard let self = self else {
                 return
@@ -76,6 +74,8 @@ final class DeviceDetailViewModel: DeviceDetailViewModelProtocol {
             }
         }
     }
+    
+    // MARK: - Private Functions
     
     private func setupReadingsAttributes() {
         readings.forEach { reading in
